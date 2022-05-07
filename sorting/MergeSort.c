@@ -1,6 +1,11 @@
 //Merge sort
 #include<stdio.h>
 
+void printarr(int *arr,int size){
+	for(int i=0;i<size;i++)
+		printf("%d ",*(arr+i));
+}
+
 void MergeSort(int *arr,int l,int r){
     if(r-l<1)return;
     int m=(l+r)/2;
@@ -43,13 +48,11 @@ int main(){
     int size=sizeof(arr)/sizeof(arr[0]);
     printf("Merge sort\n");
     printf("INPUT  : ");
-    for(int i=0;i<size;i++)
-        printf("%d ",arr[i]);
+    printarr(arr,size);
     printf("\n");
     MergeSort(arr,0,size-1);
     printf("OUTPUT : ");
-    for(int i=0;i<size;i++)
-        printf("%d ",arr[i]);
+    printarr(arr,size);
     printf("\n");
     return 0;
 }

@@ -27,13 +27,11 @@ int main(){
     int size=sizeof(arr)/sizeof(arr[0]);
     printf("Bubble sort\n");
     printf("INPUT  : ");
-    for(int i=0;i<size;i++)
-        printf("%d ",arr[i]);
+    printarr(arr,size);
     printf("\n");
     BubbleSort(arr,size);
     printf("OUTPUT : ");
-    for(int i=0;i<size;i++)
-        printf("%d ",arr[i]);
+    printarr(arr,size);
     printf("\n");
     return 0;
 }

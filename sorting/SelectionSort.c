@@ -7,6 +7,11 @@ void swap(int *a,int *b){
     *b=temp;
 }
 
+void printarr(int *arr,int size){
+	for(int i=0;i<size;i++)
+		printf("%d ",*(arr+i));
+}
+
 void SelectionSort(int *arr,int size){
     for(int i=0;i<size;i++){
         int min_index=i;
@@ -23,13 +28,11 @@ int main(){
     int size=sizeof(arr)/sizeof(arr[0]);
     printf("Selection sort\n");
     printf("INPUT  : ");
-    for(int i=0;i<size;i++)
-        printf("%d ",arr[i]);
+    printarr(arr,size);
     printf("\n");
     SelectionSort(arr,size);
     printf("OUTPUT : ");
-    for(int i=0;i<size;i++)
-        printf("%d ",arr[i]);
+    printarr(arr,size);
     printf("\n");
     return 0;
 }

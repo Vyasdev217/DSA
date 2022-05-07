@@ -1,4 +1,4 @@
-//Bubble sort
+//Insertion sort
 #include<stdio.h>
 
 void swap(int *a,int *b){

@@ -43,6 +43,39 @@ void queue_display(que *q){
 	printf("\n");
 }
 
+/*
+// Priority queue
+que s1,s2,s3;
+void priority_enqueue(int priority,int data){
+	switch (priority){
+		case 1:
+			queue_enqueue(&s1,data);
+			break;
+		case 2:
+			queue_enqueue(&s2,data);
+			break;
+		case 3:
+			queue_enqueue(&s3,data);
+			break;
+		
+		default:
+			break;
+	}
+}
+
+void priority_dequeue(){
+	if(s1.count!=0){
+		queue_dequeue(&s1);
+	}
+	else if(s2.count!=0){
+		queue_dequeue(&s2);
+	}
+	else if(s3.count!=0){
+		queue_dequeue(&s3);
+	}
+}
+*/
+
 int main(){
 	que s;
 	s.count=0;
